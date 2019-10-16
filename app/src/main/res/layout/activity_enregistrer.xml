@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".EnregistrerActivity">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/hdepart"
+        android:background="@android:color/holo_blue_bright"
+        android:minHeight="@android:dimen/app_icon_size"
+        android:minWidth="@android:dimen/thumbnail_height"
+        android:hint="Hdepart" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:layout_below="@+id/hdepart"
+        android:layout_alignLeft="@+id/hdepart"
+        android:layout_alignStart="@+id/hdepart"
+        android:layout_marginTop="35dp"
+        android:id="@+id/depart"
+        android:background="@android:color/holo_blue_bright"
+        android:minHeight="@android:dimen/app_icon_size"
+        android:hint="Depart" />
+
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/depart"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/holo_blue_bright"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Destination"
+        android:inputType="text"
+        android:maxWidth="40dp"
+
+        android:minHeight="@android:dimen/app_icon_size" />
+
+    <EditText
+        android:id="@+id/transporteur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/destination"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/holo_blue_bright"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Transporteur"
+        android:inputType="text"
+        android:maxWidth="40dp"
+        android:minHeight="@android:dimen/app_icon_size" />
+
+    <EditText
+        android:id="@+id/prix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/transporteur"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/holo_blue_bright"
+        android:paddingLeft="5dp"
+        android:ems="10"
+        android:hint="Prix"
+        android:inputType="numberDecimal"
+        android:maxWidth="40dp"
+
+        android:minHeight="@android:dimen/app_icon_size" />
+
+    <Button
+        android:text="Enregistrer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/enregistrer"
+        android:background="@android:color/holo_red_dark"
+        android:minWidth="@android:dimen/thumbnail_width"
+        android:textSize="18sp"
+        tools:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
